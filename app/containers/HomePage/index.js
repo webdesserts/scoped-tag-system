@@ -25,6 +25,7 @@ import {
 
 import Button from 'Button';
 import H1 from 'H1';
+import H2 from 'H2';
 import List from 'List';
 import ListItem from 'ListItem';
 import RepoListItem from 'RepoListItem';
@@ -71,23 +72,12 @@ export class HomePage extends React.Component {
       <article>
         <div>
           <section className={ styles.textSection }>
-            <H1>React Boilerplate</H1>
-            <p>Quick setup for new performance orientated, offline–first React.js applications featuring Redux, hot–reloading, PostCSS, react-router, ServiceWorker, AppCache, FontFaceObserver and Mocha.</p>
+            <H1>Scoped Tag System</H1>
+            <p>Rethinking a Usable Modern File System</p>
           </section>
           <section className={ styles.textSection }>
-              <form className={ styles.usernameForm } onSubmit={ this.props.onSubmitForm }>
-                <label>Show repositories of
-                  <span className={ styles.atPrefix }>@</span>
-                  <input
-                    className={ styles.input }
-                    type="text"
-                    placeholder="mxstbr"
-                    value={ this.props.username }
-                    onChange={ this.props.onChangeUsername }
-                  />
-                </label>
-              </form>
-              { mainContent }
+            <H2>Second Header</H2>
+            { mainContent }
           </section>
           <Button handleRoute = { this.openFeaturesPage }>Features</Button>
         </div>
